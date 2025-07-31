@@ -1,0 +1,16 @@
+//Rachit singh
+//080
+//A3
+#include<iostream>
+using namespace std;
+int main(){
+    string str1;
+    cout<<"enter the string = ";
+    cin>>str1;
+    cout<<str1;
+    
+    return 0;
+}
+output:
+enter the string = rachit
+rachit
