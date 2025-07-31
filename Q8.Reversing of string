@@ -1,0 +1,23 @@
+//Rachit singh
+//A3
+//080
+#include<iostream>
+using namespace std;
+int main(){
+    
+    string str1;
+    cout<<"enter the string 1 = ";
+    cin>>str1;
+    int n=str1.length();
+    for(int i=n-1;i>=0;i--){
+        cout<<str1[i];
+        
+    }
+  
+    
+    return 0;
+}
+
+OUTPUT:
+enter the string 1 = rachit
+tihcar
