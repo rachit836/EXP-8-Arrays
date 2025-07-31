@@ -1,6 +1,8 @@
+# **experiment 8: Arrays and Strings**
 
+---
 
-#  **Experiment 8: Array Operations in C++**
+#  Arrays
 
 ---
 
@@ -139,4 +141,129 @@ In this experiment, we learned and practiced the essential operations on arrays 
 
 These operations form the foundation of array manipulation in programming and are essential for problem-solving in C++.
 
+---
 
+# Strings
+
+---
+
+### 🔹 **Aim:**
+
+To perform basic operations on strings such as:
+
+1. Input and Output of strings
+2. Concatenation of strings
+3. Reversing a string
+4. Checking if a string is a palindrome
+
+---
+
+### 🔹 **Tools Used:**
+
+* Programiz c++ compiler
+
+---
+
+### 🔹 **Theory:**
+
+A **string** is a sequence of characters stored in contiguous memory locations, often represented as an array of characters terminated by a null character `'\0'` in C-style strings, or using the `std::string` class in C++. Strings allow various operations such as input/output, concatenation, reversing, and comparison.
+
+Strings are fundamental in programming for handling text data. Using **`for` loops**, we can access or manipulate individual characters of a string by their index.
+
+---
+
+### 🔹 **Definitions & Syntax:**
+
+---
+
+#### ✅ **1. Input and Output of Strings**
+
+**Definition:**
+Input/output of strings can be done using `cin` or `getline` for complete lines, and displayed using `cout`.
+
+**Syntax:**
+
+```cpp
+string str;
+cin >> str;          // Input (no spaces)
+cout << str << endl; // Output
+
+// For input with spaces:
+getline(cin, str);
+cout << str << endl;
+```
+
+---
+
+#### ✅ **2. Concatenation of Strings**
+
+**Definition:**
+Concatenation joins two or more strings end-to-end.
+
+**Syntax:**
+
+```cpp
+string str1 = "Hello ";
+string str2 = "World";
+string str3 = str1 + str2;  // Concatenation using '+'
+cout << str3 << endl;
+```
+
+---
+
+#### ✅ **3. Reversing a String**
+
+**Definition:**
+Reversing a string means rearranging its characters in the opposite order.
+
+**Syntax:**
+
+```cpp
+string str = "example";
+for(int i = str.length() - 1; i >= 0; i--) {
+    cout << str[i];
+}
+cout << endl;
+```
+
+---
+
+#### ✅ **4. Checking Palindrome of a String**
+
+**Definition:**
+A palindrome is a string that reads the same backward as forward.
+
+**Syntax:**
+
+```cpp
+string str;
+bool isPalindrome = true;
+int n = str.length();
+
+for(int i = 0; i < n/2; i++) {
+    if(str[i] != str[n - i - 1]) {
+        isPalindrome = false;
+        break;
+    }
+}
+
+if(isPalindrome) cout << "Palindrome" << endl;
+else cout << "Not Palindrome" << endl;
+```
+
+---
+
+### 🔹 **Conclusion:**
+
+In this experiment, we learned and practiced essential string operations in C++. We successfully:
+
+* Performed input and output of strings,
+* Concatenated two strings,
+* Reversed strings using indexing,
+* Checked whether a string is a palindrome.
+
+
+
+---
+
+If you'd like, I can also provide a full combined sample code for either arrays or strings! Would you like me to do that?
